@@ -15,7 +15,13 @@ namespace RoundPartner\Model\Client\Entity;
  * @property string $customer_status
  * @property string $created
  * @property string $modified
+ *
+ * @property Address[] $address
  */
 class Customer
 {
+    public function __construct()
+    {
+        $this->address = array();
+    }
 }
